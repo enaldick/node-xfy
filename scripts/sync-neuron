@@ -1,0 +1,22 @@
+#! /bin/bash 
+###########################################
+# Sync Files to philly server
+###########################################
+
+# constants
+baseDir=$(cd `dirname "$0"`;pwd)
+remotePath="neuron:~/git"
+localPath=xfy-node
+
+# functions
+
+# main 
+[ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
+cd $baseDir/../..
+rsync -av --exclude ".*" \
+    --exclude "node_modules/" \
+    --exclude "logs/" \
+    --exclude ".vscode" \
+    --exclude "config/environment/development.js" \
+    --exclude "tmp" \
+    $localPath $remotePath

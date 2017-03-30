@@ -1,0 +1,31 @@
+{
+  "name": "node-xfy",
+  "version": "1.0.0",
+  "description": "xfyun nodejs sdk.",
+  "main": "index.js",
+  "directories": {
+  },
+  "scripts": {
+    "postinstall":"node scripts/npm-postinstall"
+  },
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "~1.2.1",
+    "nan": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/enaldick/node-xfy.git"
+  },
+  "keywords": [
+    "xfyun", "科大讯飞", "语音识别", "讯飞云"
+  ],
+  "author": "vacant <enaldick@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enaldick/node-xfy/issues"
+  },
+  "homepage": "https://github.com/enaldick/node-xfy#readme",
+  "devDependencies": {
+  }
+}
